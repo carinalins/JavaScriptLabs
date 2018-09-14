@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function func01() {
+			var x = 10; //local variable
+			y = 20; //global variable
+
+			alert(x);
+			alert(y);
+		};
+
+		func01();
+
+		function func02(){
+			y++;
+			alert(y); //accesible
+			alert(x); //not accesible
+		};
+
+		func02();
+	</script>
+
+</body>
+</html>
