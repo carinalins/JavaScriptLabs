@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing Javascript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		var logico = true;
+		var num = 10;
+		var text = "10";
+
+
+		document.write(logico+"<br/>");
+
+		//==  10 is equal to "10", only matter the value not the type of variable.
+		logico = num == text;
+		document.write("10 ==\"10\" " + logico + "<br/>");
+		//=== 10 is equal to "10", returns false because the type of variable is different, so compare the type and not the value.
+		logico = num === text;
+		document.write("10 ===\"10\" " + logico + "<br/>");
+
+		//10 is different of "10", returns false because the values are equal.
+		logico = num != text;
+		document.write("10 != \"10\" " + logico + "<br/>");
+
+		//10 is different of "10", returns true because the types are different.
+		logico = num !== text;
+		document.write("10 !== \"10\"" + logico + "<br/>");
+
+		//checking if 10 is greater than or greater than/equal to 10 
+		logico = num > text;
+		document.write("10>\"10\"" + logico + "<br/>");//returns false bc 10 is not greater than 10
+
+		logico = num >= text;
+		document.write("10>=\"10\"" + logico + "<br/>");//returns true because 10 is not greater but is equal to 10.
+		
+
+
+	</script>
+
+</body>
+</html>
