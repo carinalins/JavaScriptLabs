@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing Javascript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+    //testing the && (AND) operator
+    	
+    var logico;
+    
+    var num1 =25;
+    var num2 =30;
+
+    logico = (num1 != num2) && (num1<num2);
+    document.write(logico + "<br/>"); // returns true
+
+    document.write("Changing the num1: ");
+
+    num1 = 30;
+
+    logico = (num1 != num2) && (num1<num2);
+    document.write(logico + "<br/>"); //returns false
+
+    </script>
+    
+    <script>
+    //testing operators with && (AND)
+    var logico2;
+    var x = 12;
+    var num3 = 25;
+    var num4 = 30;
+
+    logico2=(num3!=num4) && (x);
+    document.write(logico2 + "<br/>"); // returns 12, returns a numeric value if the operator 1 is not false. it is a different syntax.
+
+    logico2=(num3==num4) && (x);
+    document.write(logico2 + "<br/>"); // returns false
+    
+    </script>
+
+    <script>
+    //testing the || (OR) operator 
+
+    var logico3;
+    var num5 = 25;
+    var num6 = 30;
+
+    logico3=(num5!=num6) || (num5>num6);
+    document.write(logico3+"<br/>"); //returns true
+    document.write("Changing the num5: ");
+
+    num5 = 30;
+
+    logico3 = (num5 != num6) || (num5>num6);
+    document.write(logico3 + "<br/>"); //returns false
+
+    
+    </script>
+
+</body>
+</html>
