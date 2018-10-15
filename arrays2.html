@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+	//testing Arrays.
+
+    var cities = ["Sao Paulo",
+    "Recife",
+    "Vitoria",
+    "Aracaju"];
+
+    
+
+    for(i =0; i<4; i++){
+        document.write(cities[i] + "<br/>");
+    }
+
+    var qtCities = cities.length;
+    document.write("The array has " + qtCities + " elements." + "<br/>");
+
+    //adding two more elements to the end of the Array. push()
+   cities.push("Blumenau");
+   cities.push("Ouro Preto");
+
+    for(i =0; i<cities.length; i++){
+        document.write(cities[i] + "<br/>");
+    }
+
+
+    //removing last element pop()
+
+    cities.pop();
+    for(i =0; i<cities.length; i++){
+        document.write(cities[i] + "<br/>");
+    }
+
+    //join method that permits to join all elements of an array in one String, specifying a caractere that separetes them.
+
+    var setOfCities = cities.join(", ");
+    document.write(setOfCities + "<br/>");
+
+
+    //using the shift() method 
+
+    cities.push("Ouro Preto");
+    cities.push("Maceio");
+    document.write("Before the shifting: " + "<br/>");
+    document.write("Size: " + cities.length + " indexes" + "<br/>");
+    document.write("1st element: " + cities[0] + "<br/>");
+
+     for(i=0; i<cities.length; i++){
+        document.write(cities[i] + "<br/>");
+    }
+
+    cities.shift();
+
+    document.write("After the shifting: " + "<br/>");
+    document.write("Size: " + cities.length + " indexes" + "<br/>");
+    document.write("1st element: " + cities[0] + "<br/>");
+
+
+    for(i=0; i<cities.length; i++){
+        document.write(cities[i] + "<br/>");
+    }
+
+	</script>
+
+</body>
+</html>
