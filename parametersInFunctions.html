@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing JavaScript</title>
+</head>
+<body>
+	<script>
+	//passing parameters per value and reference
+
+    function valueReference(strVar, arrVar){
+        strVar = "Modified String";
+        arrVar[0] = "Modified Array";
+    }
+
+    var text = "Original Value";
+    var vetor = ["Original Value"];
+
+    document.write("String before calling the function: " + text + "<br/>");
+    document.write("Array before calling the function: " + vetor[0] + "<br/>");
+
+    //calling the function
+
+    valueReference(text,vetor);
+    document.write("String after calling the function: " + text + "<br/>");
+    document.write("Array after calling the function: " + vetor[0] + "<br/>");
+
+
+
+    
+	</script>
+
+</body>
+</html>

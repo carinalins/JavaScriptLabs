@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing JavaScript</title>
+</head>
+<body>
+	<script>
+	//returning values into functions.
+
+        function square(number){
+            if (isNaN(number)){
+                return "Inputed value is not a valid number";
+            }
+           sq = number * number;
+           return sq;
+
+        }
+
+        var num = prompt(" Enter with a number: ");
+        document.write("The square of " + num + " is " + square(num));
+    
+	</script>
+
+</body>
+</html>

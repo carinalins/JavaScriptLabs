@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing JavaScript</title>
+</head>
+<body>
+	<script>
+	//testing Slipe method
+
+	var Cities = ["Sao Paulo", "Recife", "Vitoria","Aracaju"];
+
+	for(i = 0; i < Cities.length; i++){
+		document.write(Cities[i] + "<br/>");
+
+	}
+	//adding elements
+	Cities.splice(1,0,"Manaus", "Londrina");
+
+	document.write("<br/> After adding the elements: <br/><br/>");
+	for(i = 0; i <Cities.length; i++){
+		document.write(Cities[i] + "<br/>");
+
+	}
+
+	//removing elements
+	Cities.splice(1,2);
+	document.write("<br/> After removing the elements: <br/><br/>");
+	for(i=0;i<Cities.length;i++){
+		document.write(Cities[i] + "<br/>");
+	}
+	
+	
+	</script>
+
+</body>
+</html>

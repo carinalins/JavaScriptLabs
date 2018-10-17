@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing JavaScript</title>
+</head>
+<body>
+	<script>
+	//concatenating arrays
+
+    var Sudeste = ["SP", "RJ", "ES", "MG"];
+    var Nordeste = ["PI", "MA", "CE", "RN", "PB", "PE","SE", "AL", "BA" ];
+	var Norte = ["AC", "AM", "AP", "RO", "RR", "PA", "TO"];
+	var Sul = ["PR", "SC", "RS"];
+	var CentroOeste = ["MS", "MT","GO","DF"];
+
+	var Estados = Nordeste.concat(Sudeste,Norte,Sul,CentroOeste);
+
+	document.write("<br/>Listing the states:<br/><br/> ");
+
+	Estados.sort(); //ordering the states alphabetically.
+
+	for(i=0; i<Estados.length; i++){
+		document.write(Estados[i] + "<br/>");
+	}
+
+	//ordering numeric elements
+
+	var Valores = [12, 34, 6, 45, 10, 9, 44, 38, 98, 23];
+
+		Valores.sort();
+
+		for(i=0; i<Valores.length; i++){
+			document.write(Valores[i] + " <br/>");
+		}
+
+	//creating functions to comparare and order
+
+	function ordenaNum(a, b){
+		return a > b ? 1 : a< b ? -1: 0;
+	} //or simply
+
+	/*function ordernaNum(a,b){
+		return a - b;
+	}*/
+
+	Valores.sort(ordenaNum);
+
+	for(i=0;i<Valores.length;i++){
+		document.write(Valores[i] + "<br/> ");
+
+	}
+
+	//ordering in reverse just use the reverse() method. Or simply return b-a;
+	
+	
+	</script>
+
+</body>
+</html>

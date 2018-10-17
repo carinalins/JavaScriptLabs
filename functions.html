@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing JavaScript</title>
+</head>
+<body>
+	<script>
+	//testing functions.
+
+    function Message(name){
+
+        alert("Congrats " + name);
+
+    }
+
+        var a = prompt("Enter your name: ");
+        Message(a);
+
+        var V = prompt("Enter with a value of tension ");
+        var R = prompt("Enter with a value of resistence");
+
+        function calc(V,R){
+            var I = V / R;
+            return I;
+        }
+
+        var corrente = calc(V,R);
+        document.write("The value of the current is " + corrente + "A");
+
+	</script>
+
+</body>
+</html>
